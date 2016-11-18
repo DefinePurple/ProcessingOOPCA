@@ -10,7 +10,7 @@ class ScreenOne {
   
   void render(){
     grid.render();
-    launchButton.render();
+    launchButton.update();
   }
   
   

@@ -1,18 +1,27 @@
-public class Button{
-  PVector pos;
-  float sizeX, sizeY;
-  float c1, c2, c3, c4;
-  color colour;
+public class Button {
+  PVector pos; //position of the button
+  float sizeX, sizeY; //Width and height of the button
+  float c1, c2, c3, c4; //Rounding of corners of the button
+  color c, colour, hover; //colour of the button when its hovered over and when it is not
+  String text;
+  float textSize;
   
   //function for buttons with different side lengths
-  public void render(){
-    color(colour);
-    rect(pos.x, pos.y, sizeX, sizeY, c1, c2, c3, c4); 
-  }
-  
-  public void hover(){
+  public void render() {
     
+    fill(c);
+    stroke(colour);
+    rect(pos.x, pos.y, sizeX, sizeY, c1, c2, c3, c4);
+    
+    fill(0);
+    textSize(textSize);
+    text(text, pos.x + (sizeX  * 0.5f), pos.y + (sizeY * 0.5f));
   }
-  
-  
+
+  public void hover() {
+    if (mouseX >= pos.x && mouseX <= pos.x + sizeX && mouseY >= pos.y && mouseY <= pos.y + sizeY)
+      c = color(hover);
+    else
+      c = color(colour);
+  }
 }//end button
