@@ -14,8 +14,9 @@ ScreenThree screenThree;
 void draw(){
   background(30);
   
-  screenOne.renderGrid();
+  screenOne.render();
 }
+
 
 void defaults(){
   textAlign(CENTER,CENTER);
