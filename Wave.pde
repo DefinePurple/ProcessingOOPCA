@@ -48,4 +48,18 @@ class Wave {
       temp += dy; //increment 'theta'
     }
   }
+  
+  //  Accepts user input and 
+  void modify(char ch) {
+    if ((ch == 'W' || ch =='w') && period < 300)
+      period += 10;
+    else if ((ch == 'Q' || ch == 'q') && period > 100)
+      period -= 10;
+    else if ((ch == 'S' || ch == 's') && amplitude < 60)
+      amplitude += 5;
+    else if ((ch == 'A' || ch == 'a') && amplitude > 20) 
+      amplitude -= 5;
+
+    dy = (TWO_PI / period) * ySpacing;
+  }
 }//end Wave

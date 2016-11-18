@@ -22,6 +22,14 @@ void draw() {
 }
 
 
+
+void keyPressed() {
+  
+  if (screenID == 1)
+    
+    screenOne.press(key);
+}
+    
 void mousePressed() {
   if (screenID == 1)
     screenID = screenOne.click(screenID);

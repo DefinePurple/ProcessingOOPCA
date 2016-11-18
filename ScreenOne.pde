@@ -20,7 +20,11 @@ class ScreenOne {
   }
   
   
-
+  void press(char ch){
+    if(screenID == 1)
+      wave.modify(ch);
+  }
+  
   int click(int screenID){
     if(launchButton.click())
       return launchButton.function;
