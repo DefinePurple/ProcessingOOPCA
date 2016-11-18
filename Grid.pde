@@ -4,8 +4,7 @@ class Grid {
     fill(60);
     float gap = height * 0.05f;
     float current = 0;
-
-
+    
     float x1 = 0;
     float x2 = width;
     while (current <= height) {
@@ -27,25 +26,34 @@ class Grid {
       popMatrix();
     }
     
+    //creates the large vertical graph line
     stroke(255);
-    float border = height * 0.1f;    
-    float lineSize = map(height, 0, height, border, height - border);
-    x1 = 0;
-    x2 = 0;
-    y1 = 0;
-    y2 = lineSize;
-    y1 = map(y1, 0, height, border, height - border);
-    x1 = map(x1, 0, width, border, width - border);
-    x2 = map(x2, 0, width, border, width - border);
-    gap = lineSize * 0.05f;
-    current = 0;
+    float borderY = height * 0.1f;
+    float borderX = width * 0.05f;
+    float lineSize = map(height, 0, height, borderY, height - (borderY * 2));
+    y1 = map(0, 0, height, borderY, height - borderY);
+    y2 = y1 + lineSize;
+    x1 = map(0, 0, width, borderX, width - borderX);
+    x2 = x1;
     line(x1, y1, x2, y2);
-    while (current <= lineSize - border){
+    
+    //Creates the small incremented lines on the vertical graph line
+    current = 0;
+    while (current <= lineSize) {
       pushMatrix();
       translate(0, current);
-      line(x1, y1, x2+5, y1);
+      line(x1, y1, x1 + 5, y1);
       current += gap;
       popMatrix();
     }
+    
+    //creates the large horizontal graph line
+    y1 = y2;
+    lineSize = map(width, 0, width, borderX, width - (borderX * 2));
+    x1 = map(0, 0, width, borderX, width - borderX);
+    x2 = x1 + lineSize;
+    line(x1, y1, x2, y2);
+    
+    
   }
 }
