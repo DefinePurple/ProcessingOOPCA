@@ -12,7 +12,9 @@ ScreenTwo screenTwo;
 ScreenThree screenThree;
 
 void draw(){
-  background(0);
+  background(30);
+  
+  screenOne.renderGrid();
 }
 
 void defaults(){

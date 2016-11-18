@@ -1,3 +1,6 @@
-class Button{
-  
-}
+public class Button{
+  Button(){
+     
+  }
+
+}//end button
