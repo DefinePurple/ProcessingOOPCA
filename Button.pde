@@ -5,6 +5,7 @@ public class Button {
   color c, colour, hover; //colour of the button when its hovered over and when it is not
   String text;
   float textSize;
+  int function;
   
   //function for buttons with different side lengths
   public void render() {
@@ -23,5 +24,12 @@ public class Button {
       c = color(hover);
     else
       c = color(colour);
+  }
+  
+  public boolean click(){
+    if (mouseX >= pos.x && mouseX <= pos.x + sizeX && mouseY >= pos.y && mouseY <= pos.y + sizeY)
+      return true;
+    else
+      return false;
   }
 }//end button
