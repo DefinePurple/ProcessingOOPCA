@@ -2,7 +2,7 @@ class LaunchButton extends Button{
   LaunchButton(){
     function = 2;
     
-    pos = new PVector(width * 0.35f, height * 0.7f);
+    pos = new PVector(width * 0.3f, height * 0.7f);
     sizeY = height * 0.1f;
     sizeX = width * 0.2f;
     pos.x -= (sizeX * 0.5f);
