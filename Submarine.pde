@@ -7,7 +7,7 @@ private class Submarine {
     sizeY = height * 0.05f;
     sizeX = width * 0.05f;
   }
-  
+
   void render() {
     noStroke();
     fill(150);
