@@ -15,6 +15,7 @@ int screenID;
 
 void draw() {
   background(30);
+
   if (screenID == 1)
     screenOne.render();
   if (screenID == 2)
@@ -26,14 +27,17 @@ void draw() {
 void keyPressed() {
   if (screenID == 1)
     screenOne.keyPress(key);
-    
-  if(screenID == 2)
+
+  if (screenID == 2)
     screenTwo.keyPress(key);
 }
 
 void mousePressed() {
   if (screenID == 1)
-    screenID = screenOne.click(screenID);
+    screenID = screenOne.mousePress(screenID);
+
+  if (screenID == 2)
+    screenID = screenTwo.mousePress(screenID);
 }
 
 void defaults() {
