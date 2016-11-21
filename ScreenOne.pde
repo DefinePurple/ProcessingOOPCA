@@ -25,9 +25,7 @@ class ScreenOne {
     launchButton.update();
   }
 
-
-  void press(char ch) {
-    if (screenID == 1)
+  void keyPress(char ch) {
       wave.modify(ch);
   }
 
