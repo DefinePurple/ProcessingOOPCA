@@ -26,14 +26,16 @@ class ScreenOne {
   }
 
   void keyPress(char ch) {
-      wave.modify(ch);
+    wave.modify(ch);
   }
 
-  int click(int screenID) {
+  int mousePress(int screenID) {
     if (launchButton.click())
       return launchButton.function;
-    else return screenID;
+    else 
+    return screenID;
   }
+
   void defaults() {
     textAlign(CENTER, CENTER);
     textSize(20);
