@@ -26,6 +26,9 @@ void draw() {
 void keyPressed() {
   if (screenID == 1)
     screenOne.keyPress(key);
+    
+  if(screenID == 2)
+    screenTwo.keyPress(key);
 }
 
 void mousePressed() {
