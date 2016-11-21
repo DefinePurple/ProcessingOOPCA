@@ -9,9 +9,8 @@ public class Button {
 
   //function for buttons with different side lengths
   public void render() {
-
     fill(c);
-    stroke(colour);
+    noStroke();
     rect(pos.x, pos.y, sizeX, sizeY, c1, c2, c3, c4);
 
     fill(0);
