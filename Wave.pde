@@ -36,7 +36,7 @@ class Wave {
       ellipse(x[i], y, 16, 16);
     }
   }
-  
+
   //  Calculates each point on the wave 
   void update() {
     //Increment the starting angle
@@ -48,7 +48,7 @@ class Wave {
       temp += dy; //increment 'theta'
     }
   }
-  
+
   //  Accepts user input and 
   void modify(char ch) {
     if ((ch == 'W' || ch =='w') && period < 300)

@@ -4,6 +4,7 @@ class ScreenOne {
   LaunchButton launchButton;
   Wave wave;
   Radar radar;
+  Submarine submarine;
 
   ScreenOne() {
     grid = new Grid();
@@ -11,6 +12,7 @@ class ScreenOne {
     graph = new Graph();
     wave = new Wave();
     radar = new Radar();
+    submarine = new Submarine();
   }
 
   void render() {
@@ -19,6 +21,7 @@ class ScreenOne {
     wave.render();
     wave.update();
     radar.render();
+    submarine.render();
     launchButton.update();
   }
 

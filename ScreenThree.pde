@@ -1,3 +1,2 @@
-class ScreenThree{
-  
+class ScreenThree {
 }//end ScreenThree

@@ -6,14 +6,14 @@ public class Button {
   String text;
   float textSize;
   int function;
-  
+
   //function for buttons with different side lengths
   public void render() {
-    
+
     fill(c);
     stroke(colour);
     rect(pos.x, pos.y, sizeX, sizeY, c1, c2, c3, c4);
-    
+
     fill(0);
     textSize(textSize);
     text(text, pos.x + (sizeX  * 0.5f), pos.y + (sizeY * 0.5f));
@@ -25,8 +25,8 @@ public class Button {
     else
       c = color(colour);
   }
-  
-  public boolean click(){
+
+  public boolean click() {
     if (mouseX >= pos.x && mouseX <= pos.x + sizeX && mouseY >= pos.y && mouseY <= pos.y + sizeY)
       return true;
     else

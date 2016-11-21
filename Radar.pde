@@ -7,8 +7,8 @@ private class Radar {
   float enemySize, hold;//Hold is the threshold for detecting the enemy. It allows for a longer 'hold' of the enemy
   int size; //Size of the radar
   ArrayList<PVector> trail;
-  int maxTrailLength,count;
-  
+  int maxTrailLength, count;
+
   Radar() {
     maxTrailLength = 50;
     size = width/9 + height/9;
@@ -16,7 +16,7 @@ private class Radar {
     hold = 10;//How long the 'enemy' will stay on the radar for (not time but pixels)
     trail = new ArrayList<PVector>(maxTrailLength);
     count = 0;
-    
+
     C = new PVector[3];
     origin = new PVector(width * 0.875f, height * 0.75f);
     tempX = origin.x - size * 0.2f;
@@ -52,7 +52,7 @@ private class Radar {
         line(origin.x, origin.y, currPoint.x, currPoint.y);
       }
     }
-    
+
     strokeWeight(1);
     stroke(255);
     noFill();
@@ -62,7 +62,7 @@ private class Radar {
     }
 
 
-    for(int i=0;i<C.length;i++){
+    for (int i=0; i<C.length; i++) {
       AC = distance(trail.get(trail.size()/2), C[i]);
       AB = distance(A, B);
       BC = distance(B, C[i]);

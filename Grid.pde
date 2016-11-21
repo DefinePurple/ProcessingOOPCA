@@ -4,7 +4,7 @@ class Grid {
     fill(60);
     float gap = height * 0.05f;
     float current = 0;
-    
+
     //HORIZONTAL LINE
     float x1 = 0;
     float x2 = width;
@@ -16,7 +16,7 @@ class Grid {
       current += gap;//increases current by gap
       popMatrix();
     }//end while
-    
+
     //VERTICAL LINE
     current = 0;
     float y1 = 0;
