@@ -10,8 +10,9 @@ class ScreenThree {
   void render() {
     abort.hover();
     abort.render();
-    timer.render();
     timer.update();
+    timer.render();
+    
   }
 
   int mousePress(int screenID) {
