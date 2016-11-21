@@ -3,8 +3,8 @@ class AbortButton extends Button{
     function = 1;
 
     sizeY = height * 0.1f;
-    sizeX = width * 0.1f;
-    pos = new PVector(width * 0.5f, height * 0.5f);
+    sizeX = width * 0.15f;
+    pos = new PVector(width * 0.5f, height * 0.8f);
     pos.x -= (sizeX * 0.5f);
     pos.y -= (sizeY * 0.5f);
     pos.y += 0.5f;
@@ -17,7 +17,7 @@ class AbortButton extends Button{
     c3 = 10;
     c4 = 10;
 
-    text = "Abort";
+    text = "ABORT";
     textSize = (sizeX + sizeY) * 0.09f;
   }
 }
