@@ -10,7 +10,7 @@ class SubmitLaunchCode extends Button {
     pos.y += 0.5f; //button was not flush with the box
 
     hover = color(150);
-    colour = color(100);
+    colour = color(205);
 
     c1 = 10;
     c2 = 10;

@@ -18,8 +18,12 @@ void draw() {
 
   if (screenID == 1)
     screenOne.render();
+    
   if (screenID == 2)
     screenTwo.render();
+    
+  if (screenID == 3)
+    screenThree.render();
 }
 
 
@@ -33,11 +37,16 @@ void keyPressed() {
 }
 
 void mousePressed() {
-  if (screenID == 1)
+  if (screenID == 1){
     screenID = screenOne.mousePress(screenID);
-
+    screenTwo.box.code.initUsersCode();
+  }
+  
   if (screenID == 2)
     screenID = screenTwo.mousePress(screenID);
+    
+  if (screenID == 3)
+    screenID = screenThree.mousePress(screenID);
 }
 
 void defaults() {

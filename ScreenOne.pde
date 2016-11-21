@@ -1,14 +1,14 @@
 class ScreenOne {
   Grid grid;
   Graph graph;
-  LaunchButton launchButton;
+  LaunchButton launch;
   Wave wave;
   Radar radar;
   Submarine submarine;
 
   ScreenOne() {
     grid = new Grid();
-    launchButton = new LaunchButton();
+    launch = new LaunchButton();
     graph = new Graph();
     wave = new Wave();
     radar = new Radar();
@@ -22,7 +22,8 @@ class ScreenOne {
     wave.update();
     radar.render();
     submarine.render();
-    launchButton.update();
+    launch.hover();
+    launch.render();
   }
 
   void keyPress(char ch) {
@@ -30,8 +31,8 @@ class ScreenOne {
   }
 
   int mousePress(int screenID) {
-    if (launchButton.click())
-      return launchButton.function;
+    if (launch.click())
+      return launch.function;
     else 
     return screenID;
   }

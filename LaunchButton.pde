@@ -9,7 +9,7 @@ class LaunchButton extends Button {
     pos.y -= (sizeY * 0.5f);
 
     hover = color(150);
-    colour = color(60);
+    colour = color(90);
 
     c1 = 10;
     c2 = 10;
@@ -19,9 +19,4 @@ class LaunchButton extends Button {
     text = "Launch Nuke";
     textSize = (sizeX + sizeY) * 0.09f;
   } 
-
-  void update() {
-    hover();
-    render();
-  }
 }

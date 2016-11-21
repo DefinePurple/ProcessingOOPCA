@@ -9,8 +9,8 @@ class CloseLaunchCode extends Button {
     pos.y -= (sizeY * 0.5f);
     pos.y += 0.5f;
 
-    hover = color(160);
-    colour = color(255);
+    hover = color(150);
+    colour = color(205);
 
     c1 = 10;
     c2 = 0;
@@ -20,9 +20,4 @@ class CloseLaunchCode extends Button {
     text = "X";
     textSize = (sizeX + sizeY) * 0.09f;
   } 
-
-  void update() {
-    hover();
-    render();
-  }
 }

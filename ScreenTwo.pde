@@ -7,8 +7,10 @@ public class ScreenTwo {
 
   void render() {
     box.render();
-    box.close.update();
-    box.submit.update();
+    box.close.hover();
+    box.close.render();
+    box.submit.hover();
+    box.submit.render();
   }
 
   void keyPress(char ch) {
@@ -16,8 +18,10 @@ public class ScreenTwo {
   }
 
   int mousePress(int screenID) {
-    if (box.close.click())
+    if (box.close.click()){
+      
       return box.close.function;
+    }
     else if (box.submit.click() && box.code.check()) {
         return box.submit.function;
     } else 
