@@ -5,7 +5,7 @@ Project is based off a submarine which launches a nuclear warhead
 <h3>Usage</h3>
 On screen one:
 <dl>
-<dd>Wave</dd>
+<dt>Wave</dt>
 <dd>Q & W - Increase & Decrease the waves period</dd>
 <dd>-A & S - Increase & Decrease the waves amplitude</dd>
 </dl>
