@@ -1,10 +1,9 @@
-# ProcessingOOPCA
-
 <snippet>
   <content>
     # ProcessingOOPCA
       Project is based off a submarine which launches a nuclear warhead
-    <br>#Usage
+    <br>
+    <h1>Usage
     On screen one:
       <dl>
         <dt>Coffee</dt>
