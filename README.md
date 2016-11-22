@@ -2,7 +2,7 @@
 
 Project is based off a submarine which launches a nuclear warhead
 <br>
-<h2><u>Usage</u></h2>
+<h2>Usage</h2>
 On screen one:
 <dl>
 <dt>Wave</dt>
@@ -10,6 +10,4 @@ On screen one:
 <dd>-A & S - Increase & Decrease the waves amplitude</dd>
 </dl>
 
-    ## Credits
-    TODO: Write credits
    
