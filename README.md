@@ -1,8 +1,8 @@
 # ProcessingOOPCA
 
 <snippet>
-  <content><![CDATA[
-    # ${1:ProcessingOOPCA}
+  <content>
+    # ProcessingOOPCA
       Project is based off a submarine which launches a nuclear warhead
     ## Usage
     On screen one:
