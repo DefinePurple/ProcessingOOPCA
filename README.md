@@ -5,10 +5,9 @@ Project is based off a submarine which launches a nuclear warhead
 <h1>Usage</h1>
 On screen one:
 <dl>
-<dt>Coffee</dt>
-<dd>- black hot drink</dd>
-<dt>Milk</dt>
-<dd>- white cold drink</dd>
+<dt>Wave</dt>
+<dd>Q & W - Increase & Decrease the waves period</dd>
+<dd>-A & S - Increase & Decrease the waves amplitude</dd>
 </dl>
 
     ## Credits
