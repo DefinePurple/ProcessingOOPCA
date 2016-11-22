@@ -3,11 +3,15 @@
 Project is based off a submarine which launches a nuclear warhead
 <br>
 <h2>Usage</h2>
+
+<b> All buttons are used with the mouse. A button is identified when you hover over it </b>
 On screen one:
 <dl>
-<dt>Wave</dt>
-<dd>Q & W - Increase & Decrease the waves period</dd>
-<dd>-A & S - Increase & Decrease the waves amplitude</dd>
+<dd>Q & W - Increase & decrease the waves period</dd>
+<dd>-A & S - Increase & decrease the waves amplitude</dd>
 </dl>
+<br>
+On screen two:<br>
+Use numbers { 0 - 9 } to enter the launch code (2314)
 
    
