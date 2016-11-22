@@ -15,7 +15,6 @@ int screenID;
 
 void draw() {
   background(30);
-
   if (screenID == 1)
     screenOne.render();
     

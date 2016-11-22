@@ -1,10 +1,12 @@
 class ScreenThree {
   private AbortButton abort;
   Timer timer;
+  Crack crack;
   
   ScreenThree() {
     abort = new AbortButton();
     timer = new Timer();
+    crack = new Crack();
   }
 
   void render() {
@@ -12,7 +14,8 @@ class ScreenThree {
     abort.render();
     timer.update();
     timer.render();
-    
+    if(timer.crack)
+      crack.render();
   }
 
   int mousePress(int screenID) {

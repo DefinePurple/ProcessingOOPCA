@@ -39,6 +39,8 @@ class Code {
   void initUsersCode() {
     for (int i = 0; i < 4; i++)
       usersCode[i] = ' ';
+      
+    pos = 0;
   }
 
   boolean check() {

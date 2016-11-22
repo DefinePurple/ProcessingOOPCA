@@ -19,7 +19,6 @@ public class ScreenTwo {
 
   int mousePress(int screenID) {
     if (box.close.click()){
-      
       return box.close.function;
     }
     else if (box.submit.click() && box.code.check()) {

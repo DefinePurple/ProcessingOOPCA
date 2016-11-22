@@ -1,31 +1,37 @@
 class Timer {
   float delta;
-  float minutes, seconds, milliseconds;  
-
+  float seconds, time; 
+  float previous;
+  boolean crack;
+  
   Timer() { 
     initTimer();
   }
   
   void initTimer(){
-    minutes = 2;
-    seconds = 60;
+    seconds = 11;
+    previous = second();
     delta = second();
+    crack = false;
   }
   
   void render() {
-    fill(255);
+    fill(200);
     stroke(255);
     textSize(70);
 
-    String strn = "Launching Nuke\n" + nf(minutes, 2, 0) + " : " + nf(seconds % 60, 2, 0);
+    String strn = "Launching Nuke\n" + nf(0, 2, 0) + " : " + nf(seconds % 60, 2, 0);
     text(strn, width/2, height/3);
   }
 
   void update() {
-    if(seconds != 0 && minutes != 0) {
-      seconds = (60 - (second() - delta)); 
-      if(seconds % 60 == 0)
-        minutes--;
+    if(seconds != 0 && previous != second()) {
+      seconds--; 
     }
+    
+    if(seconds == 0)
+      crack = true;
+
+    previous = second();
   }
 }
