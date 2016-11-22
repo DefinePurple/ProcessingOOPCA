@@ -2,7 +2,7 @@
 
 Project is based off a submarine which launches a nuclear warhead
 <br>
-<h3>Usage</h3>
+<h2>Usage</h2>
 On screen one:
 <dl>
 <dt>Wave</dt>
