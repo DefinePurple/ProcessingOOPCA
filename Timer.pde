@@ -3,11 +3,15 @@ class Timer {
   float minutes, seconds, milliseconds;  
 
   Timer() { 
-    minutes = 3;
+    initTimer();
+  }
+  
+  void initTimer(){
+    minutes = 2;
     seconds = 60;
     delta = second();
   }
-
+  
   void render() {
     fill(255);
     stroke(255);

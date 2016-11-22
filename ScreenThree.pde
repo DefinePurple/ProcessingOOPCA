@@ -16,9 +16,10 @@ class ScreenThree {
   }
 
   int mousePress(int screenID) {
-    if (abort.click())
+    if (abort.click()){
+      timer.initTimer();
       return abort.function;
-    else 
+    }else 
     return screenID;
   }
 }//end ScreenThree
