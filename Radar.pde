@@ -16,7 +16,8 @@ private class Radar {
     hold = 10;//How long the 'enemy' will stay on the radar for (not time but pixels)
     trail = new ArrayList<PVector>(maxTrailLength);
     count = 0;
-
+    
+    //Creates 3 'enemy ships'
     C = new PVector[3];
     origin = new PVector(width * 0.875f, height * 0.75f);
     tempX = origin.x - size * 0.2f;
@@ -32,6 +33,7 @@ private class Radar {
   }
 
   void render() {
+    //Creates point on edge of circle
     tempX = origin.x + ((size/2)-2) * cos(count/100.0f);
     tempY = origin.y + ((size/2)-2) * sin(count/100.0f);
     count++;
@@ -41,10 +43,12 @@ private class Radar {
     //Draws the radar line
     noFill();
     strokeWeight(3);
-    trail.add(A);
+    trail.add(A);//Adds A to array list
+    //Checks if the size of array list is too big, if it is, remove until its size is okay
     while (trail.size () >= maxTrailLength)
       trail.remove(0);
 
+    //If the size of the trail is okay, draw them all
     if (trail.size() >= maxTrailLength-1) {
       for (int i = 1; i <= trail.size(); i++) {
         PVector currPoint = trail.get(trail.size() - i);
@@ -61,7 +65,7 @@ private class Radar {
       ellipse(origin.x, origin.y, i, i);
     }
 
-
+    //Used to check and draw the enemies
     for (int i=0; i<C.length; i++) {
       AC = distance(trail.get(trail.size()/2), C[i]);
       AB = distance(A, B);
