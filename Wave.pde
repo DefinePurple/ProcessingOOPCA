@@ -8,9 +8,9 @@ class Wave {
 
   Wave() {
     border = height * 0.05f; //Distance away from the top of the screen
-    nHeight = height * 0.4f; //Determines the height of the wave 
-    waveSize = (width * 0.01f) + (height * 0.01f); //Determines thewaveSize of the ellipse    
-    centerX = width * 0.95f;
+    nHeight = height * 0.5f; //Determines the height of the wave 
+    waveSize = (width * 0.01f) + (height * 0.01f); //Determines the size of the ellipses    
+    centerX = width * 0.9f;
     thetaIncrement = 0.1f; //Determines how much to increment theta by
     period = 200; //Determines the period of the sine wave
     amplitude = 40; //Determines the amplitude of the sine wave
@@ -27,13 +27,14 @@ class Wave {
 
     //Line at  centerY of wave
     float y1 = border - 10 + ySpacing;
-    float y2 = border + 8 + ySpacing*x.length;
+    float y2 = y1 + nHeight;
     line( centerX, y1, centerX, y2);
 
     strokeWeight(1);
     for (int i = 0; i < x.length; i++) {
       y = border + ySpacing*i;
-      ellipse(x[i], y, 16, 16);
+      if(y < y2)
+        ellipse(x[i], y, waveSize, waveSize);
     }
   }
 

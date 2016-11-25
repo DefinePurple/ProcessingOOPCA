@@ -22,6 +22,7 @@ int screenID;//Used to determine which screen to draw
 
 void setup() {
   fullScreen();
+  //size(800,600);
   defaults();
 
   screenOne = new ScreenOne();//init screen one
