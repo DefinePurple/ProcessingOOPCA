@@ -36,11 +36,4 @@ class ScreenOne {
     else 
     return screenID;
   }
-
-  void defaults() {
-    textAlign(CENTER, CENTER);
-    textSize(20);
-    fill(255);
-    stroke(255);
-  }
 }//end screenOne
