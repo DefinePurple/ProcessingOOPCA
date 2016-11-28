@@ -13,4 +13,4 @@ On screen two:<br>
 Use numbers { 0 - 9 } to enter the launch code (2314)
 
    
-[![YouTube]http://img.youtube.com/vi/L1O_fdVjeUw/0.jpg](https://www.youtube.com/watch?v=L1O_fdVjeUw&feature=youtu.be)
+[![YouTube](http://img.youtube.com/vi/L1O_fdVjeUw/0.jpg])(https://www.youtube.com/watch?v=L1O_fdVjeUw&feature=youtu.be)
