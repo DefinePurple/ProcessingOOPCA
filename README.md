@@ -1,6 +1,7 @@
 # ProcessingOOPCA
 
-Project is based off a submarine which launches a nuclear warhead
+Project is based off a movie in which a submarine launches a nuclear warhead. Its called "Movie which launches a nuke from a submarine"
+
 <br>
 <h2>Usage</h2>
 
