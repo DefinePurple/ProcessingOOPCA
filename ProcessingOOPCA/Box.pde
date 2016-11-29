@@ -1,5 +1,5 @@
 //The white box on screen two which holds the users code
-class Box {
+private class Box {
   PVector box;//Position of box
   float sizeX, sizeY;//Width and height of box
   Code code;//Class for getting and checking the users code

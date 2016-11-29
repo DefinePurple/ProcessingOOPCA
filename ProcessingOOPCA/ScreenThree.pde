@@ -1,4 +1,4 @@
-class ScreenThree {
+private class ScreenThree {
   private AbortButton abort;
   Timer timer;
   Crack crack;
@@ -8,7 +8,8 @@ class ScreenThree {
     timer = new Timer();
     crack = new Crack();
   }
-
+  
+  //Call each object in screen Three
   void render() {
     abort.hover();
     abort.render();
@@ -18,7 +19,8 @@ class ScreenThree {
     if(timer.crack)
       crack.render();
   }
-
+  
+  //Checks if buttons are clicked 
   int mousePress(int screenID) {
     if (abort.click()){
       timer.initTimer();

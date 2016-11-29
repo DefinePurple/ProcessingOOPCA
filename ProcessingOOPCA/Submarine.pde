@@ -1,5 +1,4 @@
 //Draw a submarine make it have red zones
-
 private class Submarine {
   float sizeX, sizeY;
 
@@ -7,7 +6,9 @@ private class Submarine {
     sizeY = height * 0.05f;
     sizeX = width * 0.05f;
   }
-
+  
+  //Users ellipse / Triangles / Rects to create a submarine
+  //uses a grid system to do so
   void render() {
     noStroke();
     fill(150);

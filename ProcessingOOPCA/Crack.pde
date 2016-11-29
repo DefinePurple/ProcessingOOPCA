@@ -2,7 +2,7 @@
   Uses a recursively drawn fractal crack to draw a 'Crack' on the screen
 */
 
-public class Crack{
+private class Crack{
   private void crack(float x1, float y1, float angle,int cur) {
     //If theres no more branches, stop drawing
     if (cur == 0) 

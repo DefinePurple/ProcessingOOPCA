@@ -1,4 +1,4 @@
-public class Button {
+private class Button {
   PVector pos; //position of the button
   float sizeX, sizeY; //Width and height of the button
   float c1, c2, c3, c4; //Rounding of corners of the button

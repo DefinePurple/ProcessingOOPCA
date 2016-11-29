@@ -1,4 +1,4 @@
-class Graph {
+private class Graph {
   void render() {
     stroke(60);
     fill(60);

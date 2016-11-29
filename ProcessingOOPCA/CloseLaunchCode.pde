@@ -1,5 +1,5 @@
 //Returns the user to screen one from screen two
-class CloseLaunchCode extends Button {
+private class CloseLaunchCode extends Button {
   CloseLaunchCode(float sx, float sy, PVector box) {
     function = 1;//What the button will return when clicked 
 

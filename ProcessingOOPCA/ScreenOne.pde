@@ -1,4 +1,4 @@
-class ScreenOne {
+private class ScreenOne {
   //Declaration of objects on screen
   Grid grid;
   Graph graph;

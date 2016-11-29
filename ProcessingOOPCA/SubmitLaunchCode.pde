@@ -1,5 +1,5 @@
 //Button to submit the launch code the user has entered on screen two
-class SubmitLaunchCode extends Button {
+private class SubmitLaunchCode extends Button {
   SubmitLaunchCode(float sx, float sy, PVector box) {
     function = 3;//What the button will return when clicked 
     

@@ -1,4 +1,4 @@
-public class ScreenTwo {
+private class ScreenTwo {
   Box box;
 
   ScreenTwo() {

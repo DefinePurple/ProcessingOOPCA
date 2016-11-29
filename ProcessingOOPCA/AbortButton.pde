@@ -1,5 +1,5 @@
 //Abort button will return the user from screen three to screen one 
-class AbortButton extends Button{
+private class AbortButton extends Button{
   AbortButton(){
     function = 1; //What the button will return when clicked 
 

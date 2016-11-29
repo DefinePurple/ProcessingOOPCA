@@ -1,4 +1,4 @@
-class Code {
+private class Code {
   char[] usersCode;//Character array which holds the users code
   int pos;//current position in array that the next number should be entered
 

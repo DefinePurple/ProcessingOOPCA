@@ -1,8 +1,8 @@
-class Wave {
+private class Wave {
   float[] x; //An array to hold each value on the x axis
   float y; //Value along the y axis
   float nHeight, waveSize; //Determines the width of the wave and thewaveSize of the ellipse
-  float border, ySpacing, centerY, centerX; //Determines the border from the left of the screen and the spacing of each ellipse
+  float border, ySpacing, centerX; //Determines the border from the left of the screen and the spacing of each ellipse
   float theta, temp, thetaIncrement, dy; //Original angle, incremented angle, starting angle increment, angle increment 
   int amplitude, period; //Increases the 'height' of each wave and 'width' of each wave 
 

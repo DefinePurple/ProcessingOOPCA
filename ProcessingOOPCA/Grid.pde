@@ -1,4 +1,4 @@
-class Grid {
+private class Grid {
   void render() {
     stroke(60);
     fill(60);

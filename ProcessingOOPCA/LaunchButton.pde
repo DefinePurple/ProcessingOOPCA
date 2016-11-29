@@ -1,5 +1,5 @@
 //Moves user from screen one to screen two
-class LaunchButton extends Button {
+private class LaunchButton extends Button {
   LaunchButton() {
     //What the button will return when clicked 
     function = 2;
