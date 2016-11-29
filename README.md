@@ -1,7 +1,13 @@
 # ProcessingOOPCA
 
 Project is based off a movie in which a submarine launches a nuclear warhead. Its called "Movie which launches a nuke from a submarine"
-
+<br>
+<h2>Implemented</h2>
+Variables, loops, methods - Yes
+Arrays & array lists - Yes
+Objects, inheritance, polymorphism - Yes
+The unit circle and trigonometry - Possibly unit circle and yes to trig
+pushMatrix, popMatrix, translate and rotate - yes
 <br>
 <h2>Usage</h2>
 
