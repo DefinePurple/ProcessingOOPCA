@@ -1,6 +1,7 @@
 # ProcessingOOPCA
 
-Project is based off a submarine which launches a nuclear warhead
+Project is based off a movie in which a submarine launches a nuclear warhead. Its called "Movie which launches a nuke from a submarine"
+
 <br>
 <h2>Usage</h2>
 
@@ -13,3 +14,4 @@ On screen two:<br>
 Use numbers { 0 - 9 } to enter the launch code (2314)
 
    
+[![YouTube](https://i.gyazo.com/77a61181625052cbe11c289085ecc00d.png)](https://www.youtube.com/watch?v=L1O_fdVjeUw&feature=youtu.be)
