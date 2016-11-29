@@ -3,14 +3,13 @@
 Project is based off a movie in which a submarine launches a nuclear warhead. Its called "Movie which launches a nuke from a submarine"
 <br>
 <h2>Implemented</h2>
-Variables, loops, methods - Yes
-Arrays & array lists - Yes
-Objects, inheritance, polymorphism - Yes
-The unit circle and trigonometry - Possibly unit circle and yes to trig
-pushMatrix, popMatrix, translate and rotate - yes
+Variables, loops, methods - Yes<br>
+Arrays & array lists - Yes<br>
+Objects, inheritance, polymorphism - Yes<br>
+The unit circle and trigonometry - Possibly unit circle and yes to trig<br>
+pushMatrix, popMatrix, translate and rotate - Yes<br>
 <br>
 <h2>Usage</h2>
-
 <b> All buttons are used with the mouse. A button is identified when you hover over it </b><br><br>
 On screen one:<br>
 Q & W - Increase & decrease the waves period<br>
