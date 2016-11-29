@@ -6,8 +6,9 @@ Project is based off a movie in which a submarine launches a nuclear warhead. It
 Variables, loops, methods - Yes<br>
 Arrays & array lists - Yes<br>
 Objects, inheritance, polymorphism - Yes<br>
-The unit circle and trigonometry - Possibly unit circle and yes to trig<br>
+The unit circle and trigonometry - Yes<br>
 pushMatrix, popMatrix, translate and rotate - Yes<br>
+Possibility of more than just this implemented<br>
 <br>
 <h2>Usage</h2>
 <b> All buttons are used with the mouse. A button is identified when you hover over it </b><br><br>
